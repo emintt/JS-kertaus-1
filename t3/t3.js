@@ -24,3 +24,4 @@ if (sivuA === sivuB && sivuB === sivuC) {
 
 // tulostus
 document.getElementById('kohde').insertAdjacentHTML('beforeend', vastaus) = vastaus;
+
