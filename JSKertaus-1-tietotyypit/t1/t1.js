@@ -15,4 +15,5 @@ const vastaus = `${asteetC} astetta celciusta on ${asteetF} astetta farenheitta
 ja ${asteetK} astetta kelvinta`;
 
 // tulostus
+console.log(document.getElementById('kohde'));
 document.getElementById('kohde').innerHTML = vastaus;
