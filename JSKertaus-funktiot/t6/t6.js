@@ -14,25 +14,25 @@ Determine the highest-rated movie by accessing the first element of the sorted a
 Display the sorted list of movies and the highest-rated movie on the HTML document.
 6p/  */
 'use strict';
-/* const movies = [];
+const movies = [];
 
 let more = true;
 while (more) {
   const title = prompt('Syötä elokuvan nimi');
   const rating = prompt('Syötä arvio (1-5)');
-  // const movie = {title: title, rating: rating}; sama kuin serraava:
+  // const movie = {title: title, rating: rating}; sama kuin seuraava:
   const movie = {title, rating};
   movies.push(movie);
 
   more = confirm('Haluatko syötä lisää?');
-} */
+}
 
-const movies = [
+/* const movies = [
   {title: 'Kinh van hoa', rating: 5},
   {title: 'Bo gia', rating: 2},
   {title: 'Sun', rating: 3},
   {title: 'Moon', rating: 4},
-];
+]; */
 
 function sortMovies(a, b) {
   const vertailu = b.rating - a.rating;

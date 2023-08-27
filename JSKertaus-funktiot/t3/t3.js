@@ -36,3 +36,39 @@ Example Output:
 
 Even Numbers: None
 6p*/
+'use strict';
+// create array of numbers
+const numbers = [];
+let more = true;
+while (more) {
+  const numberStr = prompt(`Enter a number (or 'done' to finish)`);
+  const number = parseInt(numberStr);
+  if (number) {
+    numbers.push(number);
+  } else if (numberStr === 'done') {
+    more = false;
+  }
+}
+// print
+const p1 = document.createElement('p');
+p1.innerText = `Numbers: ${numbers}`;
+document.querySelector('#kohde').appendChild(p1);
+
+// check even numbers
+const evenNumbers = [];
+for (const num of numbers) {
+  if (num % 2 === 0) {
+    evenNumbers.push(num);
+  }
+}
+console.log(evenNumbers);
+
+// print even numbers
+const p2 = document.createElement('p');
+if (evenNumbers.length !== 0) {
+  p2.innerText = `Even numbers: ${evenNumbers}`;
+} else {
+  p2.innerText = `Even numbers: None `;
+}
+
+document.querySelector('#kohde').appendChild(p2);
