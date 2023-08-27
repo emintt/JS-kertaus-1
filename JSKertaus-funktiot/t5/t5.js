@@ -17,7 +17,6 @@ console.log(sortArray(numbers, "asc")); // Output: [1, 2, 5, 8, 9]
 console.log(sortArray(numbers, "desc")); // Output: [9, 8, 5, 2, 1]
 3p */
 'use strict';
-'use strict';
 function sortArray(numbers, order) {
   let sortedNumbers = [];
   if (order === 'asc') {
